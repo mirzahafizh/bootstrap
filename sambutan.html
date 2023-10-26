@@ -92,29 +92,5 @@
             <li>humas.itk.ac.id</li>
         </div>
     </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var navbarLinks = document.querySelectorAll('.navbar-nav a.nav-link');
-        
-            for (var i = 0; i < navbarLinks.length; i++) {
-                navbarLinks[i].addEventListener('click', function(event) {
-                    event.preventDefault();
-        
-                    var targetId = this.getAttribute('data-bs-target').slice(1); // Dapatkan ID tujuan
-                    var targetElement = document.getElementById(targetId); // Temukan elemen tujuan
-        
-                    window.scrollTo({
-                        top: targetElement.offsetTop - document.querySelector('.navbar').offsetHeight, // Kurangi tinggi navbar
-                        behavior: 'smooth' // Animasi scroll
-                    });
-                });
-            }
-            
-            function buttonOnClick() {
-            window.location.href = 'html/sambutan.html'; // Ganti dengan URL halaman yang Anda inginkan
-        }
-        });
-
-        </script>
 </body>
 </html>
