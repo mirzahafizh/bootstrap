@@ -1,0 +1,301 @@
+.center-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    }
+
+    .center-container img {
+        width: 480px;
+        height: auto;
+    }
+
+    .center-container h1 {
+        margin: 20px; /* Menghapus margin bawaan h1 */
+    }
+
+
+    .about {
+        display: flex;
+        align-items: center;
+        text-align: justify;
+        padding: 20px;
+        margin-top: 30px;
+    }
+    
+    .about img {
+        max-width: 100%;
+        width: 350px; /* Sesuaikan dengan ukuran yang diinginkan */
+        height: auto;
+        margin-right: 20px; /* Jarak antara gambar dan teks */
+        box-shadow: 0px 10px 20px black;
+        border-radius: 10px;
+    }
+    
+    .about .title {
+        flex: 1; /* Bagian teks akan memenuhi ruang tersisa */
+    }
+    
+    .about h1, .about p {
+        margin-top: 10px;
+        margin-left: 20px;
+        text-align: justify;
+    }
+    
+    @media (max-width: 768px) {
+        .about {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    
+        .about img {
+            margin: 0 0 10px 0;
+        }
+
+        .about h1{
+            text-align: center;
+        }
+    }
+    
+
+
+
+
+
+    .sambutan {
+        margin-bottom: 20px;
+        border: 5px solid #ccc;
+        background-color: gray;
+        color: white;
+        padding: 20px;
+        margin: 40px;
+    }
+    
+    .sambutan-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .sambutan img {
+        max-width: 100%;
+        width: 200px;
+        height: auto;
+        box-shadow: 0px 10px 20px black;
+        margin-bottom: 20px;
+    }
+    
+    .sambutan1-title h1 {
+        margin: 10px 0;
+        font-size: 2.5rem; /* Set font size to match Bootstrap display-4 */
+    }
+    
+    .sambutan1-title h2 {
+        font-size: 1.5rem; /* Set font size to match Bootstrap h2 */
+    }
+    
+    .sambutan1-title p {
+        margin: 10px 0;
+        text-align: justify;
+    }
+    
+    .cta-button-container {
+        display: flex;
+        margin-top: 20px;
+        max-width: 100%;
+    }
+    
+
+    .btn-warning {
+        display: inline-block;
+        margin-top: 10px;
+        background-color: orange;
+        color: #FFF;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        width: 100%;
+    }
+    
+    .btn-warning:hover {
+        background-color: #0056b3;
+        color:white;
+    }
+
+    .visi-misi {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .visi-misi img {
+        width: 100%;
+        max-width: 480px;
+        height: auto;
+        margin: 20px;
+        border-radius: 10px;
+    }
+    
+    .title-visi,
+    .title-misi {
+        width: 100%;
+        text-align: left;
+        margin: 10px 0;
+    }
+    
+    .title-visi h1,
+    .title-misi h1 {
+        color: rgba(6, 15, 66);
+        font-size: 35px;
+        border-bottom: 5px solid orange;
+        padding-bottom: 5px;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .title-visi p,
+    .title-misi p {
+        color: rgba(6, 15, 66);
+        margin: 10px 0;
+    }
+
+
+    .tugas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .tugas img {
+        width: 100%;
+        max-width: 480px;
+        height: auto;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 10px 20px black;
+    }
+    
+    .title-tugas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .title-tugas h1 {
+        color: rgba(6, 15, 66);
+        font-size: 35px;
+        border-bottom: 5px solid orange;
+        padding-bottom: 5px;
+        margin: 10px 0;
+    }
+    
+    .title-tugas p {
+        color: rgba(6, 15, 66);
+        text-align: justify;
+        margin: 30px;
+    }
+
+    .title-tugas li {
+        color: rgba(6, 15, 66);
+        text-align: justify;
+        margin: 10px auto; /* Rata kiri-kanan di tengah */
+        width: 100%;
+        max-width: 1000px;
+    }
+
+
+    #kontak {
+        background-color: blueviolet;
+        color: white;
+        padding: 20px;
+      }
+      
+      .column-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      
+      .column {
+        flex: 1;
+        margin: 10px;
+      }
+      
+      .column img{
+        width: 200px;
+      }
+      .column h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      
+      .column p,
+      .column li {
+        font-size: 14px;
+        margin: 5px 0;
+      }
+
+
+    
+
+/* Mengatur warna teks navbar */
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+/* Mengatur warna teks brand di navbar */
+.navbar-dark .navbar-brand {
+    color: white;
+}
+
+/* Mengatur warna teks tombol toggle */
+
+
+/* Mengatur hover pada menu navigasi */
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #0056b3; /* Warna hover */
+}
+
+/* Mengatur hover pada brand */
+.navbar-dark .navbar-brand:hover {
+    color: #0056b3; /* Warna hover */
+}
+
+
+#sambutan-lanjutan {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#sambutan-lanjutan img {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    margin-right: 20px; /* Jarak antara gambar dan teks */
+    border-radius: 10px;
+}
+
+.sambutan-title {
+    flex: 1;
+    color: rgba(6, 15, 66);
+    line-height: 1.6;
+}
+
+.sambutan-title h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.sambutan-title p {
+    margin-top: 10px;
+}
