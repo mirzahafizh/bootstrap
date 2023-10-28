@@ -129,9 +129,8 @@
 
     .visi-misi {
         display: flex;
-        flex-direction: column;
         align-items: center;
-        text-align: center;
+        text-align: justify;
         padding: 20px;
     }
     
@@ -141,6 +140,7 @@
         height: auto;
         margin: 20px;
         border-radius: 10px;
+        box-shadow: 0px 10px 20px black;
     }
     
     .title-visi,
@@ -164,12 +164,33 @@
     .title-misi p {
         color: rgba(6, 15, 66);
         margin: 10px 0;
+        margin-left: 20px;
     }
+    @media (max-width: 768px) {
+        .visi-misi {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    
+        .visi-mis img {
+            margin: 0 0 10px 0;
+        }
 
+        .visi-misi h1{
+            text-align: center;
+        }
+
+        .visi-misi p{
+            text-align: justify;
+        }
+    }
+    
 
     .tugas {
         display: flex;
         flex-direction: column;
+
         align-items: center;
         padding: 20px;
     }
@@ -201,15 +222,17 @@
     .title-tugas p {
         color: rgba(6, 15, 66);
         text-align: justify;
-        margin: 30px;
+        margin: 10px;
     }
 
-    .title-tugas li {
+    .title-tugas ol {
         color: rgba(6, 15, 66);
         text-align: justify;
         margin: 10px auto; /* Rata kiri-kanan di tengah */
         width: 100%;
         max-width: 1000px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
 
