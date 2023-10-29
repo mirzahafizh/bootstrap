@@ -21,7 +21,8 @@
         align-items: center;
         text-align: justify;
         padding: 20px;
-        margin-top: 30px;
+        margin-top: 10px;
+        margin-right: 15px;
     }
     
     .about img {
@@ -165,6 +166,7 @@
         color: rgba(6, 15, 66);
         margin: 10px 0;
         margin-left: 20px;
+        margin-right: 15px;
     }
     @media (max-width: 768px) {
         .visi-misi {
@@ -222,6 +224,7 @@
     .title-tugas p {
         color: rgba(6, 15, 66);
         text-align: justify;
+        margin-right: 15px;
         margin: 10px;
     }
 
